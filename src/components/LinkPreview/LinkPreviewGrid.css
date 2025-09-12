@@ -1,0 +1,149 @@
+/* ========================================
+   PreviewsContainer - Responsive Layout
+   ======================================== */
+
+.previews-container {
+  padding: 16px 20px;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  scroll-behavior: smooth;
+}
+
+/* Handle empty container */
+.previews-container:empty {
+  display: none;
+}
+
+/* ========================================
+   Previews Grid Container
+   ======================================== */
+
+.previews-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ========================================
+   Layout-Specific Styles
+   ======================================== */
+
+/* Single Column Layout */
+.previews-grid.layout-single-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Two Column Layout - Medium Sidebars */
+.previews-grid.layout-two-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  align-items: start;
+  max-width: 100%;
+}
+
+/* Grid Auto-Fit Layout - Wide Sidebars */
+.previews-grid.layout-grid-auto-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+/* ========================================
+   Responsive Breakpoints
+   ======================================== */
+
+/* Wide Sidebars (600px+) */
+@media (min-width: 600px) {
+  .previews-container {
+    gap: 20px;
+  }
+  
+  .previews-grid.layout-grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+}
+
+/* Medium Sidebars (500px - 599px) */
+@media (min-width: 500px) and (max-width: 599px) {
+  .previews-grid.layout-two-column {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 100%;
+  }
+}
+
+/* Narrow Sidebars (< 500px) */
+@media (max-width: 499px) {
+  .previews-grid.layout-single-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* ========================================
+   Responsive Adjustments
+   ======================================== */
+
+/* Extra Small Sidebars */
+@media (max-width: 400px) {
+  .previews-container {
+    padding: 14px 16px;
+    gap: 14px;
+  }
+  
+  .previews-grid {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 300px) {
+  .previews-container {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+  
+  .previews-grid {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 250px) {
+  .previews-container {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+  
+  .previews-grid {
+    gap: 10px;
+  }
+}
+
+/* ========================================
+   Wide Sidebar Optimizations
+   ======================================== */
+
+/* Very Wide Sidebars (800px+) */
+@media (min-width: 800px) {
+  .previews-grid.layout-grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    justify-content: center;
+  }
+}
+
+/* Ultra-Wide Sidebars (1000px+) */
+@media (min-width: 1000px) {
+  .previews-grid.layout-grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

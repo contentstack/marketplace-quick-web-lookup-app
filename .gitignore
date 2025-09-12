@@ -1,0 +1,64 @@
+# ===========================================
+# Dependencies
+# ===========================================
+node_modules/
+package-lock.json
+
+# ===========================================
+# Build outputs
+# ===========================================
+dist/
+build/
+.vite/
+
+# ===========================================
+# Environment and configuration
+# ===========================================
+.env
+.env.local
+
+# ===========================================
+# Testing and reports
+# ===========================================
+playwright-report/
+test-results/
+coverage/
+*.lcov
+
+# ===========================================
+# Runtime and temporary files
+# ===========================================
+data.json
+storageState.json
+*.log
+*.tmp
+*.temp
+
+# ===========================================
+# IDE and editor files
+# ===========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===========================================
+# Operating system files
+# ===========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===========================================
+# Logs and debugging
+# ===========================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*

@@ -1,0 +1,62 @@
+{
+  "name": "quick-web-lookup",
+  "author": "Contentstack",
+  "description": "A Contentstack marketplace app that automatically extracts URLs from entry content and generates rich link previews with metadata, images, and descriptions.",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@contentstack/app-sdk": "^2.2.0",
+    "html-react-parser": "^3.0.8",
+    "jsrsasign": "^11.1.0",
+    "lodash": "^4.17.21",
+    "node-forge": "^1.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "build:check": "tsc -b && vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview --host",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "test:e2e": "npx playwright test --config=playwright.config.ts",
+    "test:chrome": "npx playwright test --config=playwright.config.ts --project=Chromium",
+    "test:chrome-headed": "npx playwright test --headed --config=playwright.config.ts --project=Chromium",
+    "test:safari": "npx playwright test --config=playwright.config.ts --project=safari",
+    "test:firefox": "npx playwright test --config=playwright.config.ts --project=firefox"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/jsrsasign": "^10.5.15",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^24.3.0",
+    "@types/node-forge": "^1.3.11",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.3.4",
+    "dotenv": "^17.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^2.7.1",
+    "typescript": "^5.9.2",
+    "vite": "^6.2.3"
+  }
+}

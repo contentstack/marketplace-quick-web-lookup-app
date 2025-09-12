@@ -52,7 +52,7 @@ A Contentstack marketplace app that automatically extracts URLs from entry conte
 Create a `.env` file:
 
 ```env
-VITE_PUBLIC_KEY_BASE_URL=your_api_key_here
+VITE_PUBLIC_KEY_BASE_URL= #Add public key base URL. Defaults to 'https://app.contentstack.com'
 ```
 
 ## 📱 Usage

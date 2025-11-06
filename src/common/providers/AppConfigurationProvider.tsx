@@ -38,7 +38,7 @@ export const AppConfigurationProvider = ({ children }: ChildProp) => {
       setInstallation(newInstallationData);
       setLoading(false);
     },
-    [location, setInstallation, setLoading],
+    [location, setInstallation, setLoading, installationData.configuration, installationData.serverConfiguration],
   );
 
   return (

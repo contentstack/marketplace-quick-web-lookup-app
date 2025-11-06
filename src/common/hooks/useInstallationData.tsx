@@ -1,8 +1,5 @@
 import { useContext } from 'react';
-import {
-  AppConfigurationContext,
-  AppConfigurationContextType,
-} from '../contexts/appConfigurationContext';
+import { AppConfigurationContext, AppConfigurationContextType } from '../contexts/appConfigurationContext';
 
 export const useInstallationData = () => {
   const { installationData, setInstallationData, loading } = useContext(

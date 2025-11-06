@@ -58,7 +58,7 @@ export const useResponsiveWidth = ({
       resizeObserver.disconnect();
       window.removeEventListener('resize', handleResize);
     };
-  }, [updateWidth]);
+  }, [updateWidth, containerRef, fallbackSelector]);
 
   const layoutType =
     width >= LAYOUT_BREAKPOINTS.GRID_AUTO_FIT

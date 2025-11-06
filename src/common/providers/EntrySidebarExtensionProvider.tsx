@@ -12,7 +12,7 @@ export const EntrySidebarExtensionProvider = ({ children }: ChildProp) => {
 
   useEffect(() => {
     (async () => {
-      let unsubscribeOnSave: () => void
+      let unsubscribeOnSave: () => void;
       if (!isEmpty(entryData) || isNull(location)) return;
       setLoading(true);
       if ('entry' in location) {

@@ -11,10 +11,7 @@ interface LinkPreviewImageProps {
 /**
  * Focused component for handling link preview images
  */
-export const LinkPreviewImage: React.FC<LinkPreviewImageProps> = ({ 
-  preview, 
-  sidebarWidth
-}) => {
+export const LinkPreviewImage: React.FC<LinkPreviewImageProps> = ({ preview, sidebarWidth }) => {
   const handleImageError = useCallback((e: React.SyntheticEvent<HTMLImageElement>) => {
     (e.target as HTMLImageElement).style.display = 'none';
   }, []);
@@ -37,20 +34,16 @@ export const LinkPreviewImage: React.FC<LinkPreviewImageProps> = ({
   if (!preview.title || !bestImageUrl) {
     return (
       <div className="preview-image no-preview">
-        <img 
-          src={NoPreviewIcon} 
-          alt={`No preview available for ${preview.originalUrl}`}
-          className="no-preview-icon"
-        />
+        <img src={NoPreviewIcon} alt={`No preview available for ${preview.originalUrl}`} className="no-preview-icon" />
       </div>
     );
   }
 
   return (
     <div className="preview-image">
-      <img 
-        src={bestImageUrl} 
-        alt={preview.title || `Link preview for ${preview.originalUrl}`} 
+      <img
+        src={bestImageUrl}
+        alt={preview.title || `Link preview for ${preview.originalUrl}`}
         onError={handleImageError}
         loading="lazy"
       />
@@ -58,4 +51,4 @@ export const LinkPreviewImage: React.FC<LinkPreviewImageProps> = ({
   );
 };
 
-export default LinkPreviewImage; 
+export default LinkPreviewImage;

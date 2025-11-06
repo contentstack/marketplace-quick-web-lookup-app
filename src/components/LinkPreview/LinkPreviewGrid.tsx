@@ -13,15 +13,12 @@ interface LinkPreviewGridProps {
 /**
  * Grid container component for displaying link preview cards with responsive layout
  */
-export const LinkPreviewGrid: React.FC<LinkPreviewGridProps> = ({ 
-  previews, 
-  loading 
-}) => {
+export const LinkPreviewGrid: React.FC<LinkPreviewGridProps> = ({ previews, loading }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
 
   // Use centralized responsive width hook
   const { layoutType } = useResponsiveWidth({
-    containerRef
+    containerRef,
   });
 
   // Determine loading skeleton count

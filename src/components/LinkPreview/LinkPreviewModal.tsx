@@ -12,12 +12,7 @@ interface LinkPreviewModalProps {
 /**
  * Focused component for the link preview modal
  */
-export const LinkPreviewModal: React.FC<LinkPreviewModalProps> = ({ 
-  preview, 
-  isOpen, 
-  onClose, 
-  sidebarWidth 
-}) => {
+export const LinkPreviewModal: React.FC<LinkPreviewModalProps> = ({ preview, isOpen, onClose, sidebarWidth }) => {
   // Handle escape key for modal
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -49,25 +44,20 @@ export const LinkPreviewModal: React.FC<LinkPreviewModalProps> = ({
 
   return (
     <div className="modal-overlay" onClick={handleCloseModal}>
-      <div 
-        className="modal-content" 
+      <div
+        className="modal-content"
         onClick={(e) => e.stopPropagation()}
         style={{
           width: modalSize.width,
-          maxWidth: modalSize.maxWidth
-        }}
-      >
+          maxWidth: modalSize.maxWidth,
+        }}>
         <div className="modal-header">
           <h3 className="modal-title">Link Details</h3>
-          <button 
-            className="modal-close" 
-            onClick={handleCloseModal}
-            aria-label="Close modal"
-          >
+          <button className="modal-close" onClick={handleCloseModal} aria-label="Close modal">
             ×
           </button>
         </div>
-        
+
         <div className="modal-body">
           {preview.title ? (
             <div className="modal-section">
@@ -80,35 +70,30 @@ export const LinkPreviewModal: React.FC<LinkPreviewModalProps> = ({
               <p className="url-title-text">{preview.originalUrl}</p>
             </div>
           )}
-          
+
           {preview.description && (
             <div className="modal-section">
               <strong>Description:</strong>
               <p>{preview.description}</p>
             </div>
           )}
-          
+
           {preview.siteName && (
             <div className="modal-section">
               <strong>Site:</strong>
               <p>{preview.siteName}</p>
             </div>
           )}
-          
+
           <div className="modal-section">
             <strong>URL:</strong>
             <div className="modal-url">
-              <a 
-                href={preview.url} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-              >
+              <a href={preview.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
                 {preview.url}
               </a>
             </div>
           </div>
-          
+
           {/* Show error information if preview failed */}
           {!preview.ok && preview.error && (
             <div className="modal-section">
@@ -117,15 +102,12 @@ export const LinkPreviewModal: React.FC<LinkPreviewModalProps> = ({
             </div>
           )}
         </div>
-        
+
         <div className="modal-footer">
           <button className="modal-button" onClick={handleCloseModal}>
             Close
           </button>
-          <button 
-            className="modal-button primary" 
-            onClick={handleOpenLink}
-          >
+          <button className="modal-button primary" onClick={handleOpenLink}>
             Open Link
           </button>
         </div>
@@ -134,4 +116,4 @@ export const LinkPreviewModal: React.FC<LinkPreviewModalProps> = ({
   );
 };
 
-export default LinkPreviewModal; 
+export default LinkPreviewModal;

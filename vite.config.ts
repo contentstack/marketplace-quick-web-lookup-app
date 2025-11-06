@@ -1,16 +1,16 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import path from "path";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
   build: {
-    outDir: "dist",
+    outDir: 'dist',
   },
   server: {
     port: 3000,
@@ -19,14 +19,14 @@ export default defineConfig({
   },
   optimizeDeps: {
     esbuildOptions: {
-      target: "es2020",
+      target: 'es2020',
     },
     // Force Vite to use the project directory for temp files
     force: true,
   },
   esbuild: {
-    logOverride: { "this-is-undefined-in-esm": "silent" },
+    logOverride: { 'this-is-undefined-in-esm': 'silent' },
   },
   // Add cache directory configuration
-  cacheDir: ".vite",
+  cacheDir: '.vite',
 });

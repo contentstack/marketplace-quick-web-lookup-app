@@ -8,7 +8,6 @@ jobs:
   issue-jira:
     runs-on: ubuntu-latest
     steps:
-
       - name: Login to Jira
         uses: atlassian/gajira-login@master
         env:
@@ -25,7 +24,7 @@ jobs:
           summary: Github | Issue | ${{ github.event.repository.name }} | ${{ github.event.issue.title }}
           description: |
             *GitHub Issue:* ${{ github.event.issue.html_url }}
-            
+
             *Description:*
             ${{ github.event.issue.body }}
-          fields: "${{ secrets.ISSUES_JIRA_FIELDS }}"
+          fields: '${{ secrets.ISSUES_JIRA_FIELDS }}'

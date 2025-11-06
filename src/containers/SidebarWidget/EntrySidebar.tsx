@@ -14,8 +14,8 @@ const EntrySidebarExtension: React.FC = () => {
   });
 
   // Calculate preview statistics
-  const successfulCount = previews.filter(p => p.ok).length;
-  const failedCount = previews.filter(p => !p.ok).length;
+  const successfulCount = previews.filter((p) => p.ok).length;
+  const failedCount = previews.filter((p) => !p.ok).length;
   const hasMixedResults = successfulCount > 0 && failedCount > 0;
 
   // Determine which content to show

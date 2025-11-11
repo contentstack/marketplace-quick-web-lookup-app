@@ -30,8 +30,8 @@ A modern Contentstack marketplace app that automatically extracts URLs from entr
 
 ```bash
 # Clone the repository
-git clone https://github.com/contentstack/quick-web-lookup.git
-cd quick-web-lookup
+git clone https://github.com/contentstack/marketplace-quick-web-lookup-app.git
+cd marketplace-quick-web-lookup-app
 
 # Install dependencies
 npm install
@@ -62,7 +62,7 @@ npm run build
 ## 🏗️ Project Structure
 
 ```
-quick-web-lookup/
+marketplace-quick-web-lookup-app/
 ├── src/
 │   ├── components/          # Reusable React components
 │   │   ├── AppFailed.tsx   # Error boundary component
@@ -175,7 +175,7 @@ test: add E2E tests for link previews
 
    - Click "Connect Repository"
    - Select GitHub and authorize access
-   - Choose your repository: `quick-web-lookup`
+   - Choose your repository: `marketplace-quick-web-lookup-app`
    - Set build command: `npm run build`
    - Set output directory: `dist`
 
@@ -244,7 +244,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/contentstack/quick-web-lookup/issues)
+- **Issues**: [GitHub Issues](https://github.com/contentstack/marketplace-quick-web-lookup-app/issues)
 - **Documentation**: [Contentstack Developer Hub](https://www.contentstack.com/docs/)
 - **Community**: [Contentstack Community](https://community.contentstack.com/)
 

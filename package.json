@@ -1,5 +1,5 @@
 {
-  "name": "quick-web-lookup",
+  "name": "marketplace-quick-web-lookup-app",
   "author": "Contentstack",
   "description": "A Contentstack marketplace app that automatically extracts URLs from entry content and generates rich link previews with metadata, images, and descriptions.",
   "version": "1.0.0",
@@ -7,7 +7,7 @@
   "keywords": [
     "contentstack",
     "app",
-    "quick-web-lookup",
+    "marketplace-quick-web-lookup-app",
     "link-preview",
     "link-preview-generator",
     "entry-sidebar-app"
@@ -15,10 +15,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/contentstack/quick-web-lookup.git"
+    "url": "https://github.com/contentstack/marketplace-quick-web-lookup-app.git"
   },
   "bugs": {
-    "url": "https://github.com/contentstack/quick-web-lookup/issues"
+    "url": "https://github.com/contentstack/marketplace-quick-web-lookup-app/issues"
   },
   "files": [
     "dist"

@@ -10,6 +10,7 @@ const FormData = require('form-data');
 const path = require('path');
 const fs = require('fs');
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface ExtensionUid {
   uid: string;
 }

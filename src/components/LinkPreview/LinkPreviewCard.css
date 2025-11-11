@@ -317,7 +317,7 @@
     gap: 6px; /* Tighter spacing for medium sidebars */
     min-height: 45px;
   }
-  
+
   .info-icon-container {
     margin-top: 3px; /* Consistent small gap */
   }
@@ -329,7 +329,7 @@
     gap: 8px; /* Standard spacing for grid layout */
     min-height: 50px;
   }
-  
+
   .info-icon-container {
     margin-top: 4px; /* Standard small gap */
   }
@@ -344,20 +344,20 @@
   .preview-card {
     min-height: 260px; /* Increased to accommodate larger images */
   }
-  
+
   .preview-image {
     height: 220px; /* Much larger images for wide sidebars */
   }
-  
+
   .preview-image img {
     padding: 10px; /* More padding for larger images */
   }
-  
+
   .preview-content {
     gap: 10px; /* Slightly more spacing for larger cards */
     min-height: 55px;
   }
-  
+
   .info-icon-container {
     margin-top: 5px; /* Slightly more gap for larger cards */
   }
@@ -368,25 +368,25 @@
   .preview-card {
     min-height: 280px; /* Increased to accommodate larger images */
   }
-  
+
   .preview-image {
     height: 240px; /* Very large images for ultra-wide sidebars */
   }
-  
+
   .preview-image img {
     padding: 12px; /* More padding for very large images */
   }
-  
+
   .preview-title {
     font-size: 15px;
     -webkit-line-clamp: 3;
   }
-  
+
   .preview-content {
     gap: 12px; /* More spacing for ultra-wide cards */
     min-height: 60px;
   }
-  
+
   .info-icon-container {
     margin-top: 6px; /* More gap for ultra-wide cards */
   }
@@ -403,29 +403,29 @@
     gap: 10px;
     min-height: 220px; /* Increased for larger images */
   }
-  
+
   .preview-image {
     height: 160px; /* Optimized for small sidebar */
   }
-  
+
   .preview-image img {
     padding: 6px; /* Less padding for small images */
   }
-  
+
   .preview-content {
     gap: 6px; /* Tighter spacing for small sidebars */
     min-height: 45px;
   }
-  
+
   .preview-title {
     font-size: 13px;
   }
-  
+
   .info-icon {
     width: 16px;
     height: 16px;
   }
-  
+
   .info-icon-container {
     margin-top: 3px; /* Consistent small gap */
   }
@@ -437,29 +437,29 @@
     gap: 8px;
     min-height: 200px; /* Increased for larger images */
   }
-  
+
   .preview-image {
     height: 140px; /* Optimized for very small sidebar */
   }
-  
+
   .preview-image img {
     padding: 5px; /* Minimal padding for very small images */
   }
-  
+
   .preview-content {
     gap: 5px; /* Very tight spacing for very small sidebars */
     min-height: 40px;
   }
-  
+
   .preview-title {
     font-size: 12px;
   }
-  
+
   .info-icon {
     width: 14px;
     height: 14px;
   }
-  
+
   .info-icon-container {
     margin-top: 2px; /* Minimal gap for very small sidebars */
   }
@@ -471,30 +471,30 @@
     gap: 6px;
     min-height: 180px; /* Increased for larger images */
   }
-  
+
   .preview-image {
     height: 120px; /* Optimized for ultra-small sidebar */
   }
-  
+
   .preview-image img {
     padding: 4px; /* Minimal padding for ultra-small images */
   }
-  
+
   .preview-content {
     gap: 4px; /* Ultra-tight spacing for ultra-small sidebars */
     min-height: 35px;
   }
-  
+
   .preview-title {
     font-size: 11px;
     -webkit-line-clamp: 2;
   }
-  
+
   .info-icon {
     width: 12px;
     height: 12px;
   }
-  
+
   .info-icon-container {
     margin-top: 2px; /* Minimal gap for ultra-small sidebars */
   }
@@ -689,18 +689,18 @@
   .modal-overlay {
     padding: 16px;
   }
-  
+
   .modal-header,
   .modal-body,
   .modal-footer {
     padding-left: 20px;
     padding-right: 20px;
   }
-  
+
   .modal-title {
     font-size: 16px;
   }
-  
+
   .modal-button {
     padding: 6px 12px;
     font-size: 13px;
@@ -711,18 +711,18 @@
   .modal-overlay {
     padding: 12px;
   }
-  
+
   .modal-header,
   .modal-body,
   .modal-footer {
     padding-left: 16px;
     padding-right: 16px;
   }
-  
+
   .modal-title {
     font-size: 15px;
   }
-  
+
   .modal-button {
     padding: 5px 10px;
     font-size: 12px;
@@ -733,18 +733,18 @@
   .modal-overlay {
     padding: 8px;
   }
-  
+
   .modal-header,
   .modal-body,
   .modal-footer {
     padding-left: 12px;
     padding-right: 12px;
   }
-  
+
   .modal-title {
     font-size: 14px;
   }
-  
+
   .modal-button {
     padding: 4px 8px;
     font-size: 11px;

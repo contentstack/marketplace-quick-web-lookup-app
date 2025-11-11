@@ -108,25 +108,25 @@
     gap: 10px;
     margin-bottom: 10px;
   }
-  
+
   .skeleton-image {
     width: 120px;
     height: 120px;
   }
-  
+
   .skeleton-image::before {
     width: 50px;
     height: 50px;
   }
-  
+
   .skeleton-title {
     height: 18px;
   }
-  
+
   .skeleton-domain {
     height: 12px;
   }
-  
+
   .skeleton-info-icon {
     width: 14px;
     height: 14px;
@@ -139,25 +139,25 @@
     gap: 8px;
     margin-bottom: 8px;
   }
-  
+
   .skeleton-image {
     width: 100px;
     height: 100px;
   }
-  
+
   .skeleton-image::before {
     width: 40px;
     height: 40px;
   }
-  
+
   .skeleton-title {
     height: 16px;
   }
-  
+
   .skeleton-domain {
     height: 10px;
   }
-  
+
   .skeleton-info-icon {
     width: 12px;
     height: 12px;
@@ -171,25 +171,25 @@
     gap: 6px;
     margin-bottom: 6px;
   }
-  
+
   .skeleton-image {
     width: 80px;
     height: 80px;
   }
-  
+
   .skeleton-image::before {
     width: 30px;
     height: 30px;
   }
-  
+
   .skeleton-title {
     height: 14px;
   }
-  
+
   .skeleton-domain {
     height: 8px;
   }
-  
+
   .skeleton-info-icon {
     width: 10px;
     height: 10px;

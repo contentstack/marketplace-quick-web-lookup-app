@@ -64,7 +64,7 @@
   .previews-container {
     gap: 20px;
   }
-  
+
   .previews-grid.layout-grid-auto-fit {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
@@ -99,7 +99,7 @@
     padding: 14px 16px;
     gap: 14px;
   }
-  
+
   .previews-grid {
     gap: 14px;
   }
@@ -110,7 +110,7 @@
     padding: 12px 14px;
     gap: 12px;
   }
-  
+
   .previews-grid {
     gap: 12px;
   }
@@ -121,7 +121,7 @@
     padding: 10px 12px;
     gap: 10px;
   }
-  
+
   .previews-grid {
     gap: 10px;
   }

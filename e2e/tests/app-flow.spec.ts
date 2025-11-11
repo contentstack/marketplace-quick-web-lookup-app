@@ -188,10 +188,14 @@ test('should show image preview even if some of the urls are not valid', async (
       throw new Error('Could not access app iframe');
     }
 
+    // eslint-disable-next-line jest/no-conditional-expect
     const errorPreviews = frame.locator('.preview-card .error-display, .preview-card .no-preview');
+    // eslint-disable-next-line jest/no-conditional-expect
     await expect(errorPreviews).toHaveCount(1);
 
+    // eslint-disable-next-line jest/no-conditional-expect
     const subtitle = frame.locator('.header-subtitle');
+    // eslint-disable-next-line jest/no-conditional-expect
     await expect(subtitle).toContainText('2 successful, 1 failed');
   }
 });

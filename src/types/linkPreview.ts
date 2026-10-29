@@ -39,14 +39,6 @@ export interface LinkPreviewCache {
   [url: string]: LinkPreview;
 }
 
-export interface ApiConfig {
-  apiKey: string;
-}
-
-export interface PeekalinkRequest {
-  link: string;
-}
-
 export interface PeekalinkResponse {
   ok: boolean;
   status?: number;

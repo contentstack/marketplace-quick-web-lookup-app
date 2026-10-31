@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 
@@ -7,6 +7,25 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
+    },
+  },
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['src/setupTests.ts'],
+    include: ['src/**/*.spec.{ts,tsx}'],
+    css: false,
+    coverage: {
+      provider: 'v8',
+      include: ['src/**/*.{ts,tsx}'],
+      exclude: [
+        'src/**/*.spec.{ts,tsx}',
+        'src/**/*.d.ts',
+        'src/setupTests.ts',
+        'src/test-utils/**',
+        'src/common/types/**',
+      ],
+      // Measured floor (98.63 / 96.9 / 97.87 / 98.63), rounded down; all above 90, so no ratchet is needed.
+      thresholds: { lines: 98, branches: 96, functions: 97, statements: 98 },
     },
   },
   build: {

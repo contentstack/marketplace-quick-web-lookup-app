@@ -41,7 +41,7 @@ describe('MarketplaceAppProvider', () => {
     expect(await screen.findByText('app-content')).toBeInTheDocument();
   });
 
-  // BUG: src/common/providers/MarketplaceAppProvider.tsx:57 only blocks on isValidAppToken === false, and
+  // BUG: MKT-19816, MKT-20237 - src/common/providers/MarketplaceAppProvider.tsx:57 only blocks on isValidAppToken === false, and
   // src/common/hooks/useVerifyAppToken.tsx:12 returns early (stays null) when there is no app-token, so the app renders
   // unverified. Expected (fail closed): no token means a blocked state (AppFailed), never protected UI.
   it.skip('blocks the app when the URL has no app token', async () => {
@@ -149,7 +149,7 @@ describe('EntrySidebarExtensionProvider', () => {
     await waitFor(() => expect(screen.getByTestId('entry')).toHaveTextContent('{}'));
   });
 
-  // BUG: src/common/providers/EntrySidebarExtensionProvider.tsx:29-33 returns the onSave unsubscribe from inside an async
+  // BUG: MKT-19816 - src/common/providers/EntrySidebarExtensionProvider.tsx:29-33 returns the onSave unsubscribe from inside an async
   // IIFE, so React never receives it and the subscription outlives the component. Expected: unsubscribe on unmount.
   it.skip('unsubscribes from entry saves on unmount', async () => {
     const unsubscribe = vi.fn();

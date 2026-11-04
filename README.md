@@ -20,7 +20,7 @@ A modern Contentstack marketplace app that automatically extracts URLs from entr
 
 ## 📋 Prerequisites
 
-- Node.js (v16 or higher)
+- Node.js 22.12 or higher (`engines`)
 - npm
 - Contentstack account (for marketplace deployment)
 
@@ -43,7 +43,10 @@ npm install
 # Start development server
 npm run dev
 
-# Run E2E tests
+# Run unit tests
+npm test
+
+# Run E2E tests (needs a Contentstack account and the .env.sample variables)
 npm run test:e2e
 
 # Run linting
@@ -91,7 +94,12 @@ marketplace-quick-web-lookup-app/
 
 ## 🧪 Testing
 
-This project includes comprehensive testing:
+### Unit tests
+
+```bash
+npm test                  # Run unit tests (Vitest)
+npm run test:coverage     # Run with the 90% coverage threshold
+```
 
 ### E2E Tests
 
@@ -227,7 +235,7 @@ npm install
 npm run dev
 
 # Run tests
-npm run test:e2e
+npm test
 ```
 
 ## 📄 License
